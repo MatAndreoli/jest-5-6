@@ -36,7 +36,7 @@ describe('Given Core is started', () => {
       beforeEach(() => {
         result = Core.dividir(numbers.n1, numbers.n2);
       });
-        
+
       it('Then return the sum', () => {
         expect(result).toBeDivisionOf(numbers.n1, numbers.n2);
       });
@@ -46,7 +46,7 @@ describe('Given Core is started', () => {
       beforeEach(() => {
         result = Core.dividir();
       });
-        
+
       it('Then return NaN', () => {
         expect(result).toBeNaN(0, 0);
       });
