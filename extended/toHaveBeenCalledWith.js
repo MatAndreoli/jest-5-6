@@ -1,9 +1,4 @@
 const toHaveBeenCalledWith = (received, ...expected) => {
-  const options = {
-    comment: 'Object.is equality',
-    isNot: this.isNot,
-    promise: this.promise,
-  };
   let pass;
   let message;
   let calls = received.mock.calls[0];

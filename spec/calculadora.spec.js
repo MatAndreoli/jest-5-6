@@ -10,7 +10,7 @@ describe('Given calculadora is started', () => {
   describe('When method calculadora is called', () => {
     describe('And op is 1', () => {
       beforeEach(() => {
-        result = calculadora(1, 2, 1);
+        calculadora(1, 2, 1);
       });
 
       it('Then it should call Core.soma', () => {
@@ -32,7 +32,7 @@ describe('Given calculadora is started', () => {
       });
 
       it('Then return 2', () => {
-        expect(result).toBe(2);
+        expect(Core.dividir).toHaveReturned(2);
       });
     });
 
@@ -44,7 +44,7 @@ describe('Given calculadora is started', () => {
 
     describe('And op is 0', () => {
       it('Then throw an Error', () => {
-        expect(() => calculadora(2, 3, 0)).toThrowError(Error);
+        expect(() => calculadora(2, 3, 0)).toThrow(Error);
       });
     });
 
