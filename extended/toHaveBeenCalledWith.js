@@ -2,6 +2,7 @@ const toHaveBeenCalledWith = (received, ...expected) => {
   let pass;
   let message;
   let calls = received.mock.calls[0];
+  console.log('🚀 ==> toHaveBeenCalledWith ==> calls', calls);
 
   if (received.mock) {
     if (received.mock.calls[0].length == expected.length) {
@@ -14,7 +15,6 @@ const toHaveBeenCalledWith = (received, ...expected) => {
             : () =>
                 `\nExpected: ${expected}\n` +
                 `Received: ${received.mock.calls[0]}`;
-          console.log('🚀 ==> toHaveBeenCalledWith ==> message', message());
           return {
             actual: received,
             pass,

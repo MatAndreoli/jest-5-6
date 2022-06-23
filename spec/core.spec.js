@@ -7,8 +7,18 @@ let numbers = {
   n2: 2,
 };
 let result;
-const core = new Core();
+let core;
+
+jest.spyOn(console, 'log');
 describe('Given Core is started', () => {
+  beforeAll(() => {
+    core = new Core();
+  });
+
+  it('Then call console.log', () => {
+    expect(console.log).toHaveBeenCalledWith('init teste');
+  });
+
   describe('When method soma is called', () => {
     describe('And there are params', () => {
       beforeEach(() => {

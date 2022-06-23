@@ -7,6 +7,7 @@
 node_modules/
 dist/
 coverage
+reports
 # Compiled Java class files
 *.class
 tests
@@ -48,3 +49,6 @@ Thumbs.db
 *.mov
 *.wmv
 
+
+# stryker temp files
+.stryker-tmp

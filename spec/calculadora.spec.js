@@ -44,7 +44,7 @@ describe('Given calculadora is started', () => {
 
     describe('And op is 0', () => {
       it('Then throw an Error', () => {
-        expect(() => calculadora(2, 3, 0)).toThrow(Error);
+        expect(() => calculadora(2, 3, 0)).toThrow(Error('OP INVALID'));
       });
     });
 
