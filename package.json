@@ -1,25 +1,33 @@
 {
-  "name": "desafio4",
-  "description": "spyOn vs fn",
-  "version": "0.0.1",
-  "main": "index.js",
-  "author": "Victor Leandro <victorleandroof@protonmail.com> (https://victorleandro.com.br/)",
-  "license": "MIT",
+  "name": "jest-5-6",
+  "version": "1.0.0",
+  "description": "# Dependências $ npm i",
+  "main": "jest.conf.js",
   "scripts": {
     "test": "./node_modules/.bin/jest --config jest.conf.js",
     "test:watch": "./node_modules/.bin/jest --watchAll",
     "stryker": "node_modules/.bin/stryker run"
   },
-  "dependencies": {
-    "mongodb": "^4.6.0"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MatAndreoli/jest-5-6.git"
   },
-  "devDependencies": {
-    "@stryker-mutator/core": "^4.5.1",
-    "@stryker-mutator/jest-runner": "^4.6.0",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MatAndreoli/jest-5-6/issues"
+  },
+  "homepage": "https://github.com/MatAndreoli/jest-5-6#readme",
+  "dependencies": {
     "@types/jest": "^27.5.1",
     "@types/mongodb": "^4.0.7",
     "jest": "^26.6.3",
     "jest-extended": "^2.0.0",
     "jest-junit": "^5.2.0"
+  },
+  "devDependencies": {
+    "@stryker-mutator/core": "^4.5.1",
+    "@stryker-mutator/jest-runner": "^4.6.0"
   }
 }
